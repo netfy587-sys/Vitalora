@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitalora | Everyday Movement, Walking Habits and Gentle Activity Ideas</title>
+<meta name="description" content="Vitalora is an independent reading space about everyday movement: how to move more through the day, build a walking habit and take simple stretch breaks.">
+
+<!-- Google AdSense / Google Ads script: paste your site code here (inside head) -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500;700;800&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{--ink:#2A1B14;--sun:#FF6A3D;--sun2:#FFB347;--sun-d:#E24F22;--paper:#FFF8F1;--white:#fff;--text:#3A2A22;--muted:#7A675D;--line:#F0E1D4;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Albert Sans',system-ui,sans-serif;background:var(--white);color:var(--text);line-height:1.76;font-size:17.5px;width:100%;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--sun-d)}
+a:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+h1,h2,h3{font-family:'Anybody',system-ui,sans-serif;font-weight:800;line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 28px}
+.narrow{max-width:780px}
+header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.brand span{font-family:'Anybody',sans-serif;font-weight:800;font-size:1.55rem}
+nav ul{display:flex;gap:28px;list-style:none}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.94rem}
+nav a:hover{color:var(--sun-d)}
+.hero{background:linear-gradient(120deg,var(--sun) 0%,var(--sun2) 100%);padding:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch;min-height:560px}
+.hero-text{padding:80px 48px 80px 0;align-self:center}
+.hero h1{color:#fff;font-size:clamp(2.6rem,5.4vw,4.5rem);margin-bottom:20px;text-shadow:0 2px 0 rgba(0,0,0,.06)}
+.hero p{color:#FFF1E6;font-size:1.15rem;max-width:520px;margin-bottom:30px}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:15px 30px;border-radius:50px;font-weight:700;transition:background .2s}
+.btn:hover{background:#4A3023}
+.hero-img{background:#e9a066 url('https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;border-radius:240px 0 0 0;min-height:420px}
+section{padding:84px 0}
+.tint{background:var(--paper)}
+.sec-head{max-width:700px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(2rem,3.6vw,2.8rem);margin-bottom:14px}
+.sec-head p{color:var(--muted)}
+.intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.intro h2{font-size:clamp(2rem,3.4vw,2.6rem)}
+.intro p{margin-bottom:20px;color:var(--muted)}
+.ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.id{border-radius:var(--r);padding:34px 28px;color:var(--white)}
+.id:nth-child(1){background:var(--sun)}
+.id:nth-child(2){background:var(--ink)}
+.id:nth-child(3){background:#C9532F}
+.id h3{color:#fff;font-size:1.5rem;margin-bottom:10px}
+.id p{font-size:.99rem;color:#FFEBDD}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split.flip .pic{order:2}
+.pic{border-radius:var(--r);overflow:hidden;background:#e9c3a4}
+.pic img{width:100%;height:100%;min-height:440px;object-fit:cover}
+.split h2{font-size:clamp(1.9rem,3.2vw,2.5rem);margin-bottom:18px}
+.split p{color:var(--muted);margin-bottom:18px}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.dy{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:18px 12px;text-align:center}
+.dy b{display:block;font-family:'Anybody',sans-serif;font-size:.95rem;color:var(--sun-d);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.dy span{font-size:.88rem;color:var(--muted);line-height:1.45;display:block}
+.dy.rest{background:var(--ink)}
+.dy.rest b{color:var(--sun2)}
+.dy.rest span{color:#E2D2C7}
+.brk{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:b}
+.bk{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px 22px;counter-increment:b}
+.bk::before{content:counter(b);display:flex;width:40px;height:40px;border-radius:50%;background:var(--sun);color:#fff;font-family:'Anybody',sans-serif;font-weight:800;align-items:center;justify-content:center;margin-bottom:14px}
+.bk h3{font-size:1.2rem;margin-bottom:6px}
+.bk p{font-size:.95rem;color:var(--muted);line-height:1.62}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:#fff}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{text-align:left;padding:16px 20px;border-bottom:1px solid var(--line);font-size:.97rem;vertical-align:top}
+th{background:var(--ink);color:#fff;font-weight:700}
+tr:last-child td{border-bottom:none}
+td:first-child{font-weight:700;color:var(--sun-d)}
+.tips{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.tips div{padding:20px 0 20px 42px;border-bottom:1px solid var(--line);position:relative}
+.tips div::before{content:"";position:absolute;left:4px;top:31px;width:14px;height:7px;border-left:3px solid var(--sun);border-bottom:3px solid var(--sun);transform:rotate(-45deg)}
+.tips h3{font-size:1.15rem;margin-bottom:4px}
+.tips p{color:var(--muted);font-size:.97rem}
+.gal{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.gal figure{margin:0}
+.gal .ph{border-radius:var(--r);overflow:hidden;background:#e9c3a4}
+.gal img{width:100%;height:270px;object-fit:cover}
+.gal figcaption{font-size:.92rem;color:var(--muted);padding-top:10px}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font-weight:700;font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;gap:20px;color:var(--ink)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--sun)}
+details[open] summary::after{content:"\2212"}
+details p{margin-top:14px;color:var(--muted)}
+.ad-slot{width:100%;max-width:1200px;margin:0 auto;padding:30px 28px;min-height:120px;text-align:center}
+.disclaimer{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--sun);border-radius:var(--r);padding:32px 36px}
+.disclaimer h3{font-size:1.35rem;margin-bottom:12px}
+.disclaimer p{color:var(--muted);font-size:.96rem;margin-bottom:10px}
+footer{background:var(--ink);color:#C9B8AC;padding:56px 0 32px}
+.foot{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:32px}
+footer .brand,footer .brand span{color:#fff}
+.foot p{max-width:420px;font-size:.95rem;margin-top:14px}
+.foot ul{list-style:none}
+.foot li{margin-bottom:10px}
+.foot a{color:#fff;text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.copy{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.88rem}
+@media(max-width:960px){
+nav{display:none}
+.hero-grid,.intro,.split{grid-template-columns:1fr;gap:36px}
+.hero-text{padding:56px 0 20px}
+.hero-img{border-radius:120px 120px 0 0;min-height:300px;margin:0 -28px}
+.split.flip .pic{order:0}
+.ideas,.tips,.gal{grid-template-columns:1fr}
+.week{grid-template-columns:repeat(4,1fr)}
+.brk{grid-template-columns:1fr 1fr}
+.gal img{height:230px}
+.pic img{min-height:300px}
+section{padding:58px 0}
+}
+@media(max-width:560px){.week{grid-template-columns:repeat(2,1fr)}.brk{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Vitalora home">
+      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#FF6A3D"/><circle cx="23" cy="10" r="3.4" fill="#fff"/><path d="M14 31l5-9 5 3 4-8M19 22l-4-4 6-4 3 4" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Vitalora</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#ideas">Ideas</a></li>
+        <li><a href="#week">Weekly rhythm</a></li>
+        <li><a href="#breaks">Desk breaks</a></li>
+        <li><a href="#faq">Questions</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Move a little. Feel the day open up.</h1>
+      <p>Vitalora is an independent reading space about everyday movement. We share simple ideas for walking more, taking stretch breaks and building a gentle activity routine that fits real life.</p>
+      <a class="btn" href="#about">Start reading</a>
+    </div>
+    <div class="hero-img" role="img" aria-label="Person running along a path at sunrise"></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap intro">
+    <h2>Why Vitalora exists</h2>
+    <div>
+      <p>Modern life asks many of us to sit for long stretches: at desks, in vehicles, on sofas. Movement does not disappear because people dislike it. It disappears because nothing in the day reminds us to include it.</p>
+      <p>Vitalora was created to make movement feel ordinary and approachable. Each article looks at one small idea, such as how to turn a phone call into a walk or how to take a two-minute stretch break between tasks.</p>
+      <p>We do not sell fitness equipment, programs or supplements, and we do not give personal exercise or medical advice. We simply share general ideas so you can find what feels comfortable and enjoyable for you.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <!-- Google ad unit 1: paste your ad code here -->
+  <!--
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  -->
+</div>
+
+<section id="ideas" class="tint" style="padding-top:60px">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Three ways to think about movement</h2>
+      <p>Movement is more than workouts. It is anything that gets you up and gently active.</p>
+    </div>
+    <div class="ideas">
+      <div class="id"><h3>Everyday movement</h3><p>Taking stairs, walking to nearby shops, gardening and housework all count. These small moments add up over a day.</p></div>
+      <div class="id"><h3>Planned activity</h3><p>Walks, swims, cycling, dancing or classes you enjoy. Choose activities you look forward to, since you are more likely to repeat them.</p></div>
+      <div class="id"><h3>Breaking up sitting</h3><p>Standing, stretching or strolling for a minute or two between long periods of sitting keeps the body feeling fresher.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div class="pic"><img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=900&q=80" alt="Person walking along a quiet path in the morning" loading="lazy"></div>
+    <div>
+      <h2>The quiet power of walking</h2>
+      <p>Walking is one of the simplest and most accessible forms of movement. It needs no equipment, can be done almost anywhere and can easily be fitted around an ordinary day.</p>
+      <p>You might begin by walking for ten minutes after a meal, taking part of your commute on foot or calling a friend while you stroll. The goal is not speed or distance but making it a regular, pleasant habit.</p>
+      <p>As the habit settles, many people enjoy gradually lengthening walks or exploring new routes. Listen to your body, wear comfortable footwear and go at your own pace.</p>
+    </div>
+  </div>
+</section>
+
+<section id="week" class="tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>A relaxed weekly rhythm</h2>
+      <p>An example of how movement can be spread across a week. Adjust it freely to suit your energy, schedule and abilities.</p>
+    </div>
+    <div class="week">
+      <div class="dy"><b>Mon</b><span>Short walk</span></div>
+      <div class="dy"><b>Tue</b><span>Stretch break</span></div>
+      <div class="dy"><b>Wed</b><span>Longer walk</span></div>
+      <div class="dy"><b>Thu</b><span>Stairs and chores</span></div>
+      <div class="dy"><b>Fri</b><span>Activity you enjoy</span></div>
+      <div class="dy"><b>Sat</b><span>Outdoor time</span></div>
+      <div class="dy rest"><b>Sun</b><span>Rest and gentle stretching</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="breaks">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>A two-minute desk break</h2>
+      <p>Try this gentle sequence every hour or so. Move within a comfortable range and stop if anything hurts.</p>
+    </div>
+    <div class="brk">
+      <div class="bk"><h3>Stand up</h3><p>Rise slowly, place your feet hip-width apart and take a couple of easy breaths.</p></div>
+      <div class="bk"><h3>Roll your shoulders</h3><p>Lift them up, roll them back and down a few times to release tension.</p></div>
+      <div class="bk"><h3>Stretch your arms</h3><p>Reach overhead, then gently open your chest by clasping hands behind you.</p></div>
+      <div class="bk"><h3>Walk a little</h3><p>Take a stroll to refill your water or step outside for fresh air.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Ways to add movement to daily life</h2>
+      <p>A general overview of common, low-pressure options.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Activity</th><th>Feels like</th><th>Easy way to begin</th></tr></thead>
+        <tbody>
+          <tr><td>Walking</td><td>Gentle and steady</td><td>Ten minutes after a meal</td></tr>
+          <tr><td>Stretching</td><td>Slow and relaxing</td><td>A few minutes in the morning or evening</td></tr>
+          <tr><td>Cycling</td><td>Rhythmic and flowing</td><td>A short, flat route on a quiet path</td></tr>
+          <tr><td>Dancing</td><td>Playful and energetic</td><td>One favourite song at home</td></tr>
+          <tr><td>Swimming</td><td>Smooth and supported by water</td><td>A relaxed session at a local pool</td></tr>
+          <tr><td>Yoga</td><td>Mindful and flowing</td><td>A beginner-friendly class or guide</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Habits that help movement stick</h2></div>
+    <div class="tips">
+      <div><h3>Start smaller than you think</h3><p>Five or ten minutes is a perfectly good beginning.</p></div>
+      <div><h3>Pick something you enjoy</h3><p>Pleasure keeps habits alive more than willpower does.</p></div>
+      <div><h3>Link it to a routine</h3><p>Walk after breakfast or stretch after brushing your teeth.</p></div>
+      <div><h3>Move with others</h3><p>A friend or family member makes activity social and fun.</p></div>
+      <div><h3>Wear comfortable clothing</h3><p>Good shoes and easy clothes make it more inviting to step out.</p></div>
+      <div><h3>Check with a professional</h3><p>Talk to a doctor before starting something new if you have health concerns.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap">
+    <div class="sec-head"><h2>Out and about</h2></div>
+    <div class="gal">
+      <figure><div class="ph"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=700&q=80" alt="Hikers on a trail through the mountains" loading="lazy"></div><figcaption>Trails invite you to slow down.</figcaption></figure>
+      <figure><div class="ph"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80" alt="Person stretching in a bright room" loading="lazy"></div><figcaption>Stretching is a gentle start to the day.</figcaption></figure>
+      <figure><div class="ph"><img src="https://images.unsplash.com/photo-1486218119243-13883505764c?auto=format&fit=crop&w=700&q=80" alt="Runners on a city path" loading="lazy"></div><figcaption>Moving together builds motivation.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <!-- Google ad unit 2: paste your ad code here -->
+  <!--
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  -->
+</div>
+
+<section id="faq">
+  <div class="wrap narrow">
+    <div class="sec-head"><h2>Common questions</h2></div>
+    <details><summary>Does Vitalora sell fitness equipment, programs or supplements?</summary><p>No. Vitalora is an informational website. We do not sell equipment, programs, memberships, supplements or any other products or services, and we do not give personal exercise or medical advice.</p></details>
+    <details><summary>How much activity do people usually need?</summary><p>General recommendations are published by national and international health organisations, and they vary by age and circumstances. A healthcare professional can advise what is suitable for you.</p></details>
+    <details><summary>I am not sporty. Can I still get started?</summary><p>Absolutely. Movement is for everyone. Begin with something easy that you enjoy, and build up gradually at your own pace.</p></details>
+    <details><summary>When should I speak to a doctor before being active?</summary><p>If you have a health condition, have been inactive for a long time, feel pain, dizziness or chest discomfort, or are unsure, consult a doctor or qualified professional first.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <div class="disclaimer" role="note">
+      <h3>Disclaimer</h3>
+      <p>The content on Vitalora is provided for general informational and educational purposes only. It is not medical, fitness or exercise advice and is not intended to diagnose, treat, cure or prevent any condition. It should not replace the advice of a qualified healthcare professional.</p>
+      <p>Abilities and health circumstances differ. Please consult a doctor or qualified professional before starting or changing any physical activity, and stop if you feel pain, dizziness or discomfort. In an emergency, contact your local emergency services. Images are used for illustration only and do not represent or endorse any specific product, brand or service.</p>
+      <p>Vitalora does not sell products or services and makes no guarantees about results from applying the ideas shared here. Any decision you make is your own responsibility. Third-party advertising may appear on this site, and we are not responsible for the content of external advertisers.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top" aria-label="Vitalora home">
+          <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#fff"/><circle cx="23" cy="10" r="3.4" fill="#FF6A3D"/><path d="M14 31l5-9 5 3 4-8M19 22l-4-4 6-4 3 4" fill="none" stroke="#FF6A3D" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Vitalora</span>
+        </a>
+        <p>An independent reading space about everyday movement, walking and gentle activity ideas.</p>
+      </div>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+    <div class="copy">&copy; 2026 Vitalora. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
